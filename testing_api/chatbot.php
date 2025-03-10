@@ -43,3 +43,5 @@ $reply = $responseData["choices"][0]["message"]["content"] ?? "Sorry, I couldn't
 echo json_encode(["reply" => $reply]);
 
 ?>
+
+
