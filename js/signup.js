@@ -12,7 +12,7 @@ document.querySelector('#login-btn').onclick = () =>{
 document.querySelector('#close-login-btn').onclick = () =>{
 
     loginForm.classList.toggle('active');
-    window.location.href = "index.php";
+    window.location.href = "../views/index.php";
 
 }
 

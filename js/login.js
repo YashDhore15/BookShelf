@@ -6,7 +6,7 @@ let loginForm = document.querySelector('.login-form-container');
 
 document.querySelector('#login-btn').onclick = () =>{
 
-    window.location.href = "login.html";
+    window.location.href = "../views/login.html";
 
     loginForm.classList.toggle('active');
 }
