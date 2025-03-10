@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
    <!-- Custom CSS File Link -->
-    <link rel="stylesheet" href="css/home_view.css">
+    <link rel="stylesheet" href="../css/home.css">
     
 </head>
 
@@ -32,7 +32,7 @@
 
         <div id="close-login-btn" class="fas fa-times"></div>
 
-        <form method="POST" action="login.php">
+        <form method="POST" action="../controller/login_controller.php">
 
             <h3>Sign in</h3>
 
@@ -62,7 +62,7 @@
 
     <!--Custom js File Link -->
 
-    <script src="js/signup.js"></script>
+    <script src="../js/signup.js"></script>
 
 </body>
 

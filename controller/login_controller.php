@@ -1,6 +1,6 @@
 <?php
 
-require "includes/db.php";
+require "../includes/db.php";
 
 session_start();
 
@@ -24,7 +24,7 @@ function login($con)
 		{
 			$user = $stmt->fetch(PDO::FETCH_ASSOC);
 			$_SESSION['user'] = $user['username'];
-			header("Location: index.php") || die("Unable to redirect!");
+			header("Location: ../views/index.php") || die("Unable to redirect!");
 			exit();	
 		}
 		else

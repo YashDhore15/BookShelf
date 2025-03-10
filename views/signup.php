@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
    <!-- Custom CSS File Link -->
-    <link rel="stylesheet" href="css/home_view.css">
+    <link rel="stylesheet" href="../css/home.css">
     
 </head>
 
@@ -65,7 +65,7 @@
 
     <!--Custom js File Link -->
 
-    <script src="js/signup.js"></script>
+    <script src="../js/signup.js"></script>
 
 </body>
 

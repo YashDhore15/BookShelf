@@ -1,6 +1,6 @@
 <?php
 
-require "includes/db.php";
+require "../includes/db.php";
 
 function createAccount($con)
 {
@@ -22,7 +22,7 @@ function createAccount($con)
 
 	if($status)
 	{
-		header("Location: login.html") || die("Unable to redirect!");
+		header("Location: ../viewslogin.html") || die("Unable to redirect!");
 		exit();
 	}
 
