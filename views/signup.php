@@ -99,18 +99,29 @@ function validateForm()
         flag = false;
     } else {
         pstr.innerText = "";
+
+        if(upwd.length < 5  )
+        {
+            pstr.innerText = "Password should atleast 5 character long";
+            flag = false;
+        }
+        if(upwd.length > 8)
+        {
+            pstr.innerText = "Password length should not be greater than 8";
+            flag = false;
+        }
     }
     
-    if(upwd.length < 5 )
-    {
-        pstr.innerText = "Password should atleast 5 character long";
-        flag = false;
-    }
-    if(upwd.length > 8)
-    {
-        pstr.innerText = "Password length should not be greater than 8";
-        flag = false;
-    }
+    // if(upwd.length < 5  )
+    // {
+    //     pstr.innerText = "Password should atleast 5 character long";
+    //     flag = false;
+    // }
+    // if(upwd.length > 8)
+    // {
+    //     pstr.innerText = "Password length should not be greater than 8";
+    //     flag = false;
+    // }
 
     return flag; // If flag is false, form submission will be prevented
 }
