@@ -1,38 +1,69 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
 
-require "includes/db.php";
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Online Boot Store Website Design Tutorial</title>
 
-session_start();
+    <!-- Swiper JS USE SWIPER form CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-function login($con)
-{
-	//$username = $_POST['username'];
-	$email = $_POST['email'];
-	$password = $_POST['password'];
+    <!-- Font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-	$sql = "SELECT * FROM users where email = :email";
+   <!-- Custom CSS File Link -->
+    <link rel="stylesheet" href="css/home_view.css">
+    
+</head>
 
-	$stmt = $con->prepare($sql);
+<body>
 
-	$status = $stmt->execute([':email' => $email]);
+            <div>
+                <div id="login-btn" ></div>
+            </div>
+            
+    <!-- login form -->
 
-	if($status)
-	{
-		$count = $stmt->rowCount(); // Returns the number of matching rows
+    <div class="login-form-container">
 
-		if($count !== 0)
-		{
-			$user = $stmt->fetch(PDO::FETCH_ASSOC);
-			$_SESSION['user'] = $user['username'];
-			header("Location: index.php") || die("Unable to redirect!");
-			exit();	
-		}
-		else
-			echo "Account not found!";
-	}
-}
+        <!-- To Close Login Form  Cross button -->
 
-login($con);
+        <div id="close-login-btn" class="fas fa-times"></div>
 
-?>
+        <form method="POST" action="login.php">
 
+            <h3>Sign in</h3>
+
+            <span>email</span>
+            <input type="email" name="email" class="box" placeholder="enter your email" id="">
+
+            <span>password</span>
+            <input type="password" name="password" class="box" placeholder="enter your password" id="">
+
+            <div class="checkbox">
+
+                <input type="checkbox" name="" id="remember-me">
+
+                <label for="remember-me">remember me</label>
+            </div>
+
+            <input type="submit" value="submit" class="btn">
+
+            <p>forget password ? <a href="#"> Click here</a></p>
+
+            <p>don't have an account ? <a href="signup.html">create one</a></p>
+        </form>
+    </div>
+
+     <!-- Swiper CDN JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--Custom js File Link -->
+
+    <script src="js/signup.js"></script>
+
+</body>
+
+</html>
