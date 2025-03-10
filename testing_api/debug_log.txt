@@ -1,0 +1,130 @@
+HTTP Code: 401
+Response: {"error":{"message":"No auth credentials found","code":401}}
+HTTP Code: 400
+Response: {"error":{"message":"mistral-7b is not a valid model ID","code":400},"user_id":"user_2u30XSaeAiUNRVWLKix7eMsjfKN"}
+HTTP Code: 200
+Response: 
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1741463013-eTB8rQ5Y887Zw3Q1h8AS","provider":"DeepInfra","model":"mistralai/mistral-7b-instruct","object":"chat.completion","created":1741463013,"choices":[{"logprobs":null,"finish_reason":"length","native_finish_reason":"length","index":0,"message":{"role":"assistant","content":" In \"Harry Potter,\" the debut novel of J.K. Rowling's series, an orphaned boy named Harry Potter discovers his magical heritage on his eleventh birthday, when he is rescued from his miserable life with the Dursleys by Hagrid, a giant of a man who works at Hogwarts School of Witchcraft and Wizardry. Harry learns he is a famous survivor of Voldemort, a dark wizard who contemplated killing him as a baby but failed. Harry is then invited to attend Hogwarts, where he learns to master his magical powers, discover the truth about his parents' past, and uncover new details regarding Voldemort's whereabouts as the darkness begins to rise once more. Throughout the story, Harry forms close relationships with fellow students, Ron Weasley and Hermione Granger, and together they uncover secrets, solve mysteries","refusal":null}}],"usage":{"prompt_tokens":33,"completion_tokens":200,"total_tokens":233}}
+HTTP Code: 200
+Response: 
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1741463063-B59J3M2rREVWJ1V2tmqZ","provider":"DeepInfra","model":"mistralai/mistral-7b-instruct","object":"chat.completion","created":1741463063,"choices":[{"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","index":0,"message":{"role":"assistant","content":" \"A Dance with Dragons\" is the fifth novel in George R.R. Martin's epic fantasy series \"A Song of Ice and Fire,\" which later became \"Game of Thrones\" when adapted into a television series. The book continues the political intrigue, warfare, and character development that the series is known for, with stories unfolding in various settings across Essos and Westeros. Characters like Daenerys Targaryen, Jon Snow, Tyrion Lannister, and Arya Stark continue their plots, each dealing with different challenges, alliances, and moral dilemmas. Daenerys's reign in Meereen faces turmoil, while Jon deals with the threats of the White Walkers in the North. The book ends with many characters' fates uncertain as the stage is set for the final conflict.","refusal":null}}],"usage":{"prompt_tokens":34,"completion_tokens":182,"total_tokens":216}}
+HTTP Code: 200
+Response: 
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1741463362-ZXw4g3PSmTqnOIy8S81K","provider":"DeepInfra","model":"mistralai/mistral-7b-instruct","object":"chat.completion","created":1741463362,"choices":[{"logprobs":null,"finish_reason":"length","native_finish_reason":"length","index":0,"message":{"role":"assistant","content":" \"Harry Potter\" is a classic seven-part fantasy series written by J.K. Rowling. The story follows Harry Potter, an orphan raised by mundane parents who discovers on his eleventh birthday that he is a wizard and is accepted into Hogwarts School of Witchcraft and Wizardry. There, he learns about his magical powers and connections to Lord Voldemort, a dark wizard intent on world domination. Throughout the series, Harry, alongside friends Hermione Granger and Ron Weasley, navigate trials, face challenges, and uncover secrets about the magical world and the mysterious prophecy that links him to Voldemort. The climax of the series revolves around Harry's battle against Voldemort to protect the magical world and himself. The books blend adventure, friendship, and coming-of-age themes, as well as exploring important themes such as love, loss,","refusal":null}}],"usage":{"prompt_tokens":33,"completion_tokens":200,"total_tokens":233}}
+HTTP Code: 200
+Response: 
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1741463494-KAjSYEr4TNEgErOhdPYR","provider":"DeepInfra","model":"mistralai/mistral-7b-instruct","object":"chat.completion","created":1741463494,"choices":[{"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","index":0,"message":{"role":"assistant","content":" \"Meditations by Marcus Aurelius is a collection of personal writings, often described as a series of reflective, self-help letters to himself during his reign as Roman Emperor. The book presents Stoic philosophy, emphasizing the power of self-control, the acceptance of fate, the importance of virtue, and the pursuit of wisdom. It encourages readers to focus on the things they can control, live in harmony with nature, and cultivate an unshakable sense of peace by understanding the impermanence of all things.\"","refusal":null}}],"usage":{"prompt_tokens":39,"completion_tokens":112,"total_tokens":151}}
+HTTP Code: 200
+Response: 
+         
+
+         
+
+         
+
+         
+{"id":"gen-1741463616-B3NiUEmBTVpUcg1fI0FE","provider":"DeepInfra","model":"mistralai/mistral-7b-instruct","object":"chat.completion","created":1741463616,"choices":[{"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","index":0,"message":{"role":"assistant","content":" \"Meditations by Marcus Aurelius is a collection of personal writings by the Roman Emperor, often considered a philosophical treatise, not intended for publication. Written in Greek around 180 AD, it is a series of philosophical reflections based on Stoicism. Throughout the book, Marcus Aurelius evaluates his own reactions to events masterfully beyond his control, emphasizing the importance of inner tranquility, self-discipline, and a heightened sense of duty for a noble and virtuous life, even when confronted with adversity.\"","refusal":null}}],"usage":{"prompt_tokens":39,"completion_tokens":121,"total_tokens":160}}
+HTTP Code: 200
+Response: 
+         
+
+         
+
+         
+
+         
+{"id":"gen-1741463721-K0yqVtpmyv5J5J5ozFRj","provider":"DeepInfra","model":"mistralai/mistral-7b-instruct","object":"chat.completion","created":1741463721,"choices":[{"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","index":0,"message":{"role":"assistant","content":" \"Harry Potter\" is a beloved fantasy series by J.K. Rowling, consisting of seven books. The series tells the story of Harry Potter, an orphan who learns on his eleventh birthday that he is a wizard and is invited to attend Hogwarts School of Witchcraft and Wizardry. Throughout the series, Harry, his friends Ron Weasley and Hermione Granger, and other characters navigate magical worlds, confront dark forces like Lord Voldemort, and uncover secrets about his past. The books explore themes of friendship, love, evil, and self-discovery, and have captivated readers worldwide.","refusal":null}}],"usage":{"prompt_tokens":33,"completion_tokens":139,"total_tokens":172}}
+HTTP Code: 200
+Response: 
+         
+
+         
+
+         
+
+         
+{"id":"gen-1741463816-EoVQqcj6KuFSwsLffUWW","provider":"DeepInfra","model":"mistralai/mistral-7b-instruct","object":"chat.completion","created":1741463816,"choices":[{"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","index":0,"message":{"role":"assistant","content":" \"A Monk Who Sold His Ferrari\" by Robin Sharma is a motivational self-help novel that follows the journey of a highly successful, yet burnt-out lawyer, Raj, who leaves his materialistic life behind to find a deeper sense of purpose. In India, Raj encounters a wise monk who teaches him ancient principles of balance, inner peace, and service to others. These lessons transform Raj, allowing him to lead a more meaningful, healthier, and more fulfilling life. The book emphasizes the importance of living with intention, prioritizing personal growth, and cultivating a positive mindset.","refusal":null}}],"usage":{"prompt_tokens":38,"completion_tokens":128,"total_tokens":166}}
+HTTP Code: 200
+Response: 
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1741463930-lAbhs6mLO18zqzjnIju7","provider":"DeepInfra","model":"mistralai/mistral-7b-instruct","object":"chat.completion","created":1741463930,"choices":[{"logprobs":null,"finish_reason":"length","native_finish_reason":"length","index":0,"message":{"role":"assistant","content":" \"Harry Potter and the Philosopher's Stone\" is a beloved fantasy novel by J.K. Rowling that follows Harry Potter, a young boy who discovers on his eleventh birthday that he is a wizard and is invited to attend Hogwarts School of Witchcraft and Wizardry. At Hogwarts, Harry learns to master his magical abilities, makes friends, and confronts the villainous sorcerer Voldemort, who is plotting to return and seek revenge on Harry. Assisted by his friends Hermione Granger and Ron Weasley, Harry uncovers a mysterious and powerful stone, the Philosopher's Stone, which Voldemort seeks to turn into a potion that will give immortality. Harry, Hermione, and Ron must outwit Voldemort and his followers to save Hogwarts and protect the Philosopher's Stone,","refusal":null}}],"usage":{"prompt_tokens":33,"completion_tokens":200,"total_tokens":233}}
+HTTP Code: 200
+Response: 
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1741463994-yDd54YteJPuuLzsWJ24z","provider":"DeepInfra","model":"mistralai/mistral-7b-instruct","object":"chat.completion","created":1741463994,"choices":[{"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","index":0,"message":{"role":"assistant","content":" \"Tell Me a Joke\" is a collection of humor pieces by author and comedian lift chiara d'Anna. The book is not a traditional book of jokes but rather an exploration of the human condition through humor, with each chapter focusing on a different topic such as love, sex, death, and politics. The author uses humor to shed light on human absurdities, illogicalities, and hypocrisies, offering a sometimes poignant, often sarcastic, and always entertaining perspective on the human experience. The book is not only a collection of jokes but also a reflection on the power of humor as a medium for making meaning and coping with life's challenges.","refusal":null}}],"usage":{"prompt_tokens":34,"completion_tokens":142,"total_tokens":176}}
+HTTP Code: 200
+Response: 
+         
+
+         
+
+         
+{"id":"gen-1741464031-AgpIiPq5duPsGABTWwBh","provider":"DeepInfra","model":"mistralai/mistral-7b-instruct","object":"chat.completion","created":1741464031,"choices":[{"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","index":0,"message":{"role":"assistant","content":" Title: \"Recommend a Fantasy Book: The Ultimate Guide to Your Next Obsession\"\n\nWritten by Erica Louise, \"Recommend a Fantasy Book\" provides a comprehensive guide for readers seeking to explore the realm of high, urban, and young adult fantasy. The book offers a detailed review of over 50 popular and less-known fantasy series, offering insightful descriptions, character analysis, and storylines to help readers choose their next fantastic literary adventure. From George R.R. Martin's \"A Song of Ice and Fire\" to Brandon Sanderson's \"The Stormlight Archive,\" Louise's guide caters to every taste, giving readers a personalized, engaging, and enlightening guide to the ever-growing fantasy genre.","refusal":null}}],"usage":{"prompt_tokens":35,"completion_tokens":164,"total_tokens":199}}

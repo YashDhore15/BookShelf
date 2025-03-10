@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Summary AI</title>
+</head>
+<body>
+
+    <h2>Get Book Summary</h2>
+    <input type="text" id="bookTitle" placeholder="Enter book title">
+    <button onclick="getSummary()">Get Summary</button>
+
+    <h3>Summary:</h3>
+    <p id="summary"></p>
+
+    <script>
+        function getSummary() {
+    let bookTitle = document.getElementById("bookTitle").value;
+    if (!bookTitle) {
+        alert("Please enter a book title.");
+        return;
+    }
+
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "test.php", true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            let response = JSON.parse(xhr.responseText);
+            console.log("API Response:", response); // Log full response to console
+
+            if (xhr.status !== 200 || response.error) {
+                document.getElementById("summary").innerText = "Error: " + (response.error || "API issue");
+                return;
+            }
+
+            if (response.choices && response.choices.length > 0) {
+                document.getElementById("summary").innerText = response.choices[0].message.content;
+            } else {
+                document.getElementById("summary").innerText = "Error: Unexpected API response.";
+            }
+        }
+    };
+
+    xhr.send(JSON.stringify({ bookTitle: bookTitle }));
+}
+
+    </script>
+
+</body>
+</html>
