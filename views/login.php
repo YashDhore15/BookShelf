@@ -53,7 +53,7 @@
 
             <p>forget password ? <a href="#"> Click here</a></p>
 
-            <p>don't have an account ? <a href="signup.html">create one</a></p>
+            <p>don't have an account ? <a href="signup.php">create one</a></p>
         </form>
     </div>
 

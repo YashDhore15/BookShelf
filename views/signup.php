@@ -32,7 +32,7 @@
 
         <div id="close-login-btn" class="fas fa-times"></div>
 
-        <form method="POST" action="signup.php">
+        <form method="POST" action="../controller/signup_controller.php">
 
             <h3>Sign up</h3>
 

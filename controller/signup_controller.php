@@ -22,7 +22,7 @@ function createAccount($con)
 
 	if($status)
 	{
-		header("Location: ../viewslogin.html") || die("Unable to redirect!");
+		header("Location: ../views/login.php") || die("Unable to redirect!");
 		exit();
 	}
 
