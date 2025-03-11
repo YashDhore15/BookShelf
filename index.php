@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- Custom CSS File Link -->
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
@@ -105,19 +105,19 @@ on mobile phone nav-bar will be at bottom -->
             <div class="swiper books-slider">
 
                 <div class="swiper-wrapper">
-                    <a href="#" class="swiper-slide"><img src="../images/book2.jpg" alt=""></a>
-                    <a href="#" class="swiper-slide"><img src="../images/book3.jpg" alt=""></a>
-                    <a href="#" class="swiper-slide"><img src="../images/book2.jpg" alt=""></a>
-                    <a href="#" class="swiper-slide"><img src="../images/book3.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="images/book2.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="images/book3.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="images/book2.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="images/book3.jpg" alt=""></a>
 
-                    <a href="#" class="swiper-slide"><img src="../images/book3.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="images/book3.jpg" alt=""></a>
 
-                    <a href="#" class="swiper-slide"><img src="../images/book2.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="images/book2.jpg" alt=""></a>
 
                 </div>
                 <!-- Shelf img tag should be Here -->
 
-                <img src="../images/stand.png" alt="" class="stand">
+                <img src="images/stand.png" alt="" class="stand">
             </div>
 
         </div>
@@ -192,7 +192,7 @@ on mobile phone nav-bar will be at bottom -->
                     </div>
 
                     <div class="image">
-                        <img src="../images/book2.jpg" alt="">
+                        <img src="images/book2.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -214,7 +214,7 @@ on mobile phone nav-bar will be at bottom -->
                     </div>
 
                     <div class="image">
-                        <img src="../images/book2.jpg" alt="">
+                        <img src="images/book2.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -236,7 +236,7 @@ on mobile phone nav-bar will be at bottom -->
                     </div>
 
                     <div class="image">
-                        <img src="../images/book2.jpg" alt="">
+                        <img src="images/book2.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -258,7 +258,7 @@ on mobile phone nav-bar will be at bottom -->
                     </div>
 
                     <div class="image">
-                        <img src="../images/book2.jpg" alt="">
+                        <img src="images/book2.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -280,7 +280,7 @@ on mobile phone nav-bar will be at bottom -->
                     </div>
 
                     <div class="image">
-                        <img src="../images/book2.jpg" alt="">
+                        <img src="images/book2.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -302,7 +302,7 @@ on mobile phone nav-bar will be at bottom -->
                     </div>
 
                     <div class="image">
-                        <img src="../images/book2.jpg" alt="">
+                        <img src="images/book2.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -324,7 +324,7 @@ on mobile phone nav-bar will be at bottom -->
                     </div>
 
                     <div class="image">
-                        <img src="../images/book2.jpg" alt="">
+                        <img src="images/book2.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -346,7 +346,7 @@ on mobile phone nav-bar will be at bottom -->
                     </div>
 
                     <div class="image">
-                        <img src="../images/book2.jpg" alt="">
+                        <img src="images/book2.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -401,7 +401,7 @@ on mobile phone nav-bar will be at bottom -->
                 <a href="#" class="swiper-slide box">
 
                     <div class="image">
-                        <img src="../images/book2.jpg" alt="">
+                        <img src="images/book2.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -425,7 +425,7 @@ on mobile phone nav-bar will be at bottom -->
                 <a href="#" class="swiper-slide box">
 
                     <div class="image">
-                        <img src="../images/book2.jpg" alt="">
+                        <img src="images/book2.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -448,7 +448,7 @@ on mobile phone nav-bar will be at bottom -->
                 <a href="#" class="swiper-slide box">
 
                     <div class="image">
-                        <img src="../images/book3.jpg" alt="">
+                        <img src="images/book3.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -471,7 +471,7 @@ on mobile phone nav-bar will be at bottom -->
                 <a href="#" class="swiper-slide box">
 
                     <div class="image">
-                        <img src="../images/book1.webp" alt="">
+                        <img src="images/book1.webp" alt="">
                     </div>
 
                     <div class="content">
@@ -494,7 +494,7 @@ on mobile phone nav-bar will be at bottom -->
                 <a href="#" class="swiper-slide box">
 
                     <div class="image">
-                        <img src="../images/book3.jpg" alt="">
+                        <img src="images/book3.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -528,7 +528,7 @@ on mobile phone nav-bar will be at bottom -->
                 <a href="#" class="swiper-slide box">
 
                     <div class="image">
-                        <img src="../images/book2.jpg" alt="">
+                        <img src="images/book2.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -552,7 +552,7 @@ on mobile phone nav-bar will be at bottom -->
                 <a href="#" class="swiper-slide box">
 
                     <div class="image">
-                        <img src="../images/book2.jpg" alt="">
+                        <img src="images/book2.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -575,7 +575,7 @@ on mobile phone nav-bar will be at bottom -->
                 <a href="#" class="swiper-slide box">
 
                     <div class="image">
-                        <img src="../images/book3.jpg" alt="">
+                        <img src="images/book3.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -598,7 +598,7 @@ on mobile phone nav-bar will be at bottom -->
                 <a href="#" class="swiper-slide box">
 
                     <div class="image">
-                        <img src="../images/book1.webp" alt="">
+                        <img src="images/book1.webp" alt="">
                     </div>
 
                     <div class="content">
@@ -621,7 +621,7 @@ on mobile phone nav-bar will be at bottom -->
                 <a href="#" class="swiper-slide box">
 
                     <div class="image">
-                        <img src="../images/book3.jpg" alt="">
+                        <img src="images/book3.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -662,7 +662,7 @@ on mobile phone nav-bar will be at bottom -->
         </div>
 
         <div class="image">
-            <img src="../images/deal-img.jpg" alt="">
+            <img src="images/deal-img.jpg" alt="">
         </div>
 
     </section>
@@ -684,7 +684,7 @@ on mobile phone nav-bar will be at bottom -->
 
                 <div class="swiper-slide box">
 
-                    <img src="../images/pic-11.png" alt="">
+                    <img src="images/pic-11.png" alt="">
                     <h3>john deo</h3>
 
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis nostrum at pariatur nobis
@@ -702,7 +702,7 @@ on mobile phone nav-bar will be at bottom -->
                 <!-- 2nd review block -->
                 <div class="swiper-slide box">
 
-                    <img src="../images/pic-12.jpg" alt="">
+                    <img src="images/pic-12.jpg" alt="">
                     <h3>john deo</h3>
 
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis nostrum at pariatur nobis
@@ -720,7 +720,7 @@ on mobile phone nav-bar will be at bottom -->
                 <!-- 3rd review block -->
                 <div class="swiper-slide box">
 
-                    <img src="../images/yaa.jpg" alt="">
+                    <img src="images/yaa.jpg" alt="">
                     <h3>john deo</h3>
 
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis nostrum at pariatur nobis
@@ -738,7 +738,7 @@ on mobile phone nav-bar will be at bottom -->
                 <!-- 4th review block -->
                 <div class="swiper-slide box">
 
-                    <img src="../images/pic-11.png" alt="">
+                    <img src="images/pic-11.png" alt="">
                     <h3>john deo</h3>
 
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis nostrum at pariatur nobis
@@ -756,7 +756,7 @@ on mobile phone nav-bar will be at bottom -->
                 <!-- 5th review block -->
                 <div class="swiper-slide box">
 
-                    <img src="../images/pic-12.jpg" alt="">
+                    <img src="images/pic-12.jpg" alt="">
                     <h3>john deo</h3>
 
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis nostrum at pariatur nobis
@@ -774,7 +774,7 @@ on mobile phone nav-bar will be at bottom -->
                 <!-- 6th review block -->
                 <div class="swiper-slide box">
 
-                    <img src="../images/pic-12.jpg" alt="">
+                    <img src="images/pic-12.jpg" alt="">
                     <h3>john deo</h3>
 
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis nostrum at pariatur nobis
@@ -814,7 +814,7 @@ on mobile phone nav-bar will be at bottom -->
                 <div class="swiper-slide box">
 
                     <div class="image">
-                        <img src="../images/blog-01.webp" alt="">
+                        <img src="images/blog-01.webp" alt="">
                     </div>
 
                     <div class="content">
@@ -834,7 +834,7 @@ on mobile phone nav-bar will be at bottom -->
                 <div class="swiper-slide box">
 
                     <div class="image">
-                        <img src="../images/blog-02.jpg" alt="">
+                        <img src="images/blog-02.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -854,7 +854,7 @@ on mobile phone nav-bar will be at bottom -->
                 <div class="swiper-slide box">
 
                     <div class="image">
-                        <img src="../images/blog-03.jpg" alt="">
+                        <img src="images/blog-03.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -874,7 +874,7 @@ on mobile phone nav-bar will be at bottom -->
                 <div class="swiper-slide box">
 
                     <div class="image">
-                        <img src="../images/blog-04.jpg" alt="">
+                        <img src="images/blog-04.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -894,7 +894,7 @@ on mobile phone nav-bar will be at bottom -->
                 <div class="swiper-slide box">
 
                     <div class="image">
-                        <img src="../images/blog-02.jpg" alt="">
+                        <img src="images/blog-02.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -970,7 +970,7 @@ on mobile phone nav-bar will be at bottom -->
                 <a href="#"> <i class="fas fa-phone"></i> +111-446-987 </a>
                 <a href="#"> <i class="fas fa-envelope"></i> BookShelf@gmail.com </a>
 
-                <img src="../images/map_footer.jpg"  class="map" alt=""> <!-- map image -->
+                <img src="images/map_footer.jpg"  class="map" alt=""> <!-- map image -->
                
             </div>
 
@@ -993,7 +993,7 @@ on mobile phone nav-bar will be at bottom -->
     <!-- Loder -->
 
     <div class="loader-container">
-        <img src="../images/loder-img.gif" alt="">
+        <img src="images/loder-img.gif" alt="">
     </div>
 
 
@@ -1002,8 +1002,8 @@ on mobile phone nav-bar will be at bottom -->
 
     <!--Custom js File Link -->
 
-    <script src="../js/home.js"></script>
-    <script src="../js/login.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/login.js"></script>
 
 </body>
 

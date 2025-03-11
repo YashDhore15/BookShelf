@@ -10,11 +10,11 @@ function login($con)
 	$email = $_POST['email'];
 	$password = $_POST['password'];
 
-	$sql = "SELECT * FROM users where email = :email";
+	$sql = "SELECT * FROM users where email = :email AND password = :password";
 
 	$stmt = $con->prepare($sql);
 
-	$status = $stmt->execute([':email' => $email]);
+	$status = $stmt->execute([':email' => $email, ':password' => $password]);
 
 	if($status)
 	{
@@ -24,11 +24,11 @@ function login($con)
 		{
 			$user = $stmt->fetch(PDO::FETCH_ASSOC);
 			$_SESSION['user'] = $user['username'];
-			header("Location: ../views/index.php") || die("Unable to redirect!");
+			header("Location: /Bookshelf/index.php") || die("Unable to redirect!");
 			exit();	
 		}
 		else
-			echo "Account not found!";
+			echo "Invalid email or password!";
 	}
 }
 

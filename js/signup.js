@@ -7,12 +7,12 @@ document.querySelector('#login-btn').onclick = () =>{
     loginForm.classList.toggle('active');
 }
 
-// To Make Close Button Of Login View Functional 
+// To Make Close Button Of signup View Functional 
 
 document.querySelector('#close-login-btn').onclick = () =>{
 
-    loginForm.classList.toggle('active');
-    window.location.href = "../views/index.php";
+    //loginForm.classList.toggle('active');
+    window.location.href = "/Bookshelf/index.php";
 
 }
 
