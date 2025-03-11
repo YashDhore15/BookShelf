@@ -37,16 +37,16 @@
             <h3>Sign up</h3>
 
             <span>username</span>
-            <input type="text" name="username" class="box" placeholder="enter your username" id="uname">
-            <p style="color:red" id="ustr"></p>
+            <input type="text" name="username" class="box" placeholder="enter your username" id="username">
+            <p style="color:red" id="username_error_msg"></p>
 
             <span>email</span>
-            <input type="email" name="email" class="box" placeholder="enter your email" id="u_email">
-            <p style="color:red" id="estr"></p>
+            <input type="email" name="email" class="box" placeholder="enter your email" id="email">
+            <p style="color:red" id="email_error_msg"></p>
 
             <span>password</span>
-            <input type="password" name="password" class="box" placeholder="enter your password" id="upwd">
-            <p style="color:red" id="pstr"></p>
+            <input type="password" name="password" class="box" placeholder="enter your password" id="password">
+            <p style="color:red" id="password_error_msg"></p>
 
             <div class="checkbox">
 
@@ -67,50 +67,61 @@
 
 function validateForm() 
 {
-    var uname = document.getElementById("uname").value.trim();
-    var u_email = document.getElementById("u_email").value.trim();
-    var upwd = document.getElementById("upwd").value.trim();
+    var username = document.getElementById("username").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var password = document.getElementById("password").value.trim();
 
-    var ustr = document.getElementById("ustr");
-    var estr = document.getElementById("estr");
-    var pstr = document.getElementById("pstr");
+    var username_error_msg = document.getElementById("username_error_msg");
+    var email_error_msg = document.getElementById("email_error_msg");
+    var password_error_msg = document.getElementById("password_error_msg");
 
     var flag = true;
 
     // Username validation
-    if (uname.length === 0) {
-        ustr.innerText = "* required";
+    if (username.length === 0) {
+        username_error_msg.innerText = "* required";
         flag = false;
     } else {
-        ustr.innerText = "";
+        username_error_msg.innerText = "";
     }
 
     // Email validation
-    if (u_email.length === 0) {
-        estr.innerText = "* required";
+    if (email.length === 0) {
+        email_error_msg.innerText = "* required";
         flag = false;
     } else {
-        estr.innerText = "";
+        email_error_msg.innerText = "";
     }
 
     // Password validation
-    if (upwd.length === 0) {
-        pstr.innerText = "* required";
+    if (password.length === 0) {
+        password_error_msg.innerText = "* required";
         flag = false;
     } else {
-        pstr.innerText = "";
+        password_error_msg.innerText = "";
+
+        if(password.length < 5  )
+        {
+            password_error_msg.innerText = "Password should atleast 5 character long";
+            flag = false;
+        }
+        if(password.length > 8)
+        {
+            password_error_msg.innerText = "Password length should not be greater than 8";
+            flag = false;
+        }
     }
     
-    if(upwd.length < 5 )
-    {
-        pstr.innerText = "Password should atleast 5 character long";
-        flag = false;
-    }
-    if(upwd.length > 8)
-    {
-        pstr.innerText = "Password length should not be greater than 8";
-        flag = false;
-    }
+    // if(password.length < 5  )
+    // {
+    //     password_error_msg.innerText = "Password should atleast 5 character long";
+    //     flag = false;
+    // }
+    // if(password.length > 8)
+    // {
+    //     password_error_msg.innerText = "Password length should not be greater than 8";
+    //     flag = false;
+    // }
 
     return flag; // If flag is false, form submission will be prevented
 }
