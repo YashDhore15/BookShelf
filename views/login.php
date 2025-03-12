@@ -67,7 +67,6 @@
     </div>
 
     <script>
-        <script>
     function sign_in_validation(event) 
     {
         event.preventDefault(); // Stop form submission
@@ -112,7 +111,8 @@
         login_credintials_check(email, password);
     }
 
-    function login_credintials_check(email, password) {
+    function login_credintials_check(email, password) 
+    {
         var message = document.getElementById("messageBox");
         var messageText = document.getElementById("message");
 
@@ -121,8 +121,10 @@
         x.open("POST", "../controller/login_controller.php", true);
         x.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
-        x.onreadystatechange = function () {
-            if (x.readyState === 4 && x.status === 200) {
+        x.onreadystatechange = function () 
+        {
+            if (x.readyState === 4 && x.status === 200) 
+            {
                 message.style.display = "block";
                 messageText.innerHTML = x.responseText;
             }
@@ -130,7 +132,7 @@
 
         x.send("user_email=" + encodeURIComponent(email) + "&user_password=" + encodeURIComponent(password));
     }
-</script>
+    </script>
 
         
 
