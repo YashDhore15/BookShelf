@@ -1,6 +1,7 @@
 <?php
 
 require "../includes/db.php";
+header("Content-Type: application/json");
 
 session_start();
 
@@ -24,12 +25,15 @@ function login($con)
 		{
 			$user = $stmt->fetch(PDO::FETCH_ASSOC);
 			$_SESSION['user'] = $user['username'];
-			header("Location: /Bookshelf/index.php") || die("Unable to redirect!");
-			exit();	
+			//header("Location: /Bookshelf/index.php") || die("Unable to redirect!");
+			echo json_encode(["status" => "success"]); // Return success response
+				
 		}
 		else
-			echo "Invalid email or password!";
+			echo json_encode(["status" => "error", "message" => "Incorrect email or password"]);
 	}
+
+    exit();
 }
 
 login($con);

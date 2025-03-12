@@ -53,14 +53,15 @@
 
             <input type="submit" value="submit" class="btn" onclick=" sign_in_validation(event)">
 
-            <p>forget password ? <a href="#"> Click here</a></p>
+            <p id="loginError" style="color:red"> </p>
 
             <p>don't have an account ? <a href="signup.php">create one</a></p>
         </form>
 
+        
         <div id="messageBox" style="display: none; padding: 10px; margin-top: 10px;">
 
-        <p id="message"></p>
+        <p id="message"> </p>
 
         </div>
 
@@ -71,13 +72,13 @@
     {
         event.preventDefault(); // Stop form submission
 
-        var email = document.getElementById("email").value;
-        var password = document.getElementById("password").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
 
-        var email_error_msg = document.getElementById("email_error_msg");
-        var password_error_msg = document.getElementById("password_error_msg");
+        let email_error_msg = document.getElementById("email_error_msg");
+        let password_error_msg = document.getElementById("password_error_msg");
 
-        var flag = true;
+        let flag = true;
 
         // Email validation
         if (email.length === 0) {
@@ -98,7 +99,7 @@
                 password_error_msg.innerText = "Password should be at least 5 characters long";
                 flag = false;
             }
-            if (password.length > 8) {
+            else if (password.length > 8) {
                 password_error_msg.innerText = "Password length should not be greater than 8";
                 flag = false;
             }
@@ -113,29 +114,36 @@
 
     function login_credintials_check(email, password) 
     {
-        var message = document.getElementById("messageBox");
-        var messageText = document.getElementById("message");
+        let message = document.getElementById("messageBox");
+        let messageText = document.getElementById("message");
+        let loginError = document.getElementById("loginError");
 
         // AJAX request
-        var x = new XMLHttpRequest();
+        let x = new XMLHttpRequest();
         x.open("POST", "../controller/login_controller.php", true);
         x.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
         x.onreadystatechange = function () 
-        {
+        {   
             if (x.readyState === 4 && x.status === 200) 
             {
-                message.style.display = "block";
-                messageText.innerHTML = x.responseText;
+            
+                let response = JSON.parse(x.responseText); // Parse JSON safely
+
+                if (response.status === "success") 
+                {
+                    window.location.href = "../index.php";
+                } 
+                else 
+                {
+                    loginError.innerHTML = response.message;
+                    console.log(loginError.innerHTML);
+                }
             }
-        };
+        }
 
         x.send("user_email=" + encodeURIComponent(email) + "&user_password=" + encodeURIComponent(password));
     }
-    </script>
-
-        
-
     </script>
 
      <!-- Swiper CDN JS Link -->

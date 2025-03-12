@@ -17,7 +17,7 @@ document.querySelector('#login-btn').onclick = () =>{
 
 // To Make Close Button Of Login View Functional 
 
-document.querySelector('#close-login-btn').onclick = () =>{
+document.querySelector('#close-login-btn').onclick = function(){
 
     //loginForm.classList.toggle('active');
     window.location.href = window.location.origin + "/Bookshelf/index.php";
