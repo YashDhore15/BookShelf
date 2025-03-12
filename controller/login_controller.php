@@ -7,8 +7,8 @@ session_start();
 function login($con)
 {
 	//$username = $_POST['username'];
-	$email = $_POST['email'];
-	$password = $_POST['password'];
+	$email = $_POST['user_email'];
+	$password = $_POST['user_password'];
 
 	$sql = "SELECT * FROM users where email = :email AND password = :password";
 
