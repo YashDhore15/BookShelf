@@ -32,7 +32,7 @@
 
         <div id="close-login-btn" class="fas fa-times"></div>
 
-        <form method="POST" action="../controller/login_controller.php" onsubmit="return sign_in_validation()">
+        <form>
 
             <h3>Sign in</h3>
 
@@ -51,56 +51,89 @@
                 <label for="remember-me">remember me</label>
             </div>
 
-            <input type="submit" value="submit" class="btn">
+            <input type="submit" value="submit" class="btn" onclick=" sign_in_validation(event)">
 
             <p>forget password ? <a href="#"> Click here</a></p>
 
             <p>don't have an account ? <a href="signup.php">create one</a></p>
         </form>
+
+        <div id="messageBox" style="display: none; padding: 10px; margin-top: 10px;">
+
+        <p id="message"></p>
+
+        </div>
+
     </div>
 
     <script>
-        function sign_in_validation()
-        {
-            var email = document.getElementById("email").value;
-            var password = document.getElementById("password").value;
-            
-            var email_error_msg = document.getElementById("email_error_msg");
-            var password_error_msg = document.getElementById("password_error_msg");
+        <script>
+    function sign_in_validation(event) 
+    {
+        event.preventDefault(); // Stop form submission
 
-            var flag = true;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
 
-            // email validation
-            if(email.length === 0)
-            {
-                email_error_msg.innerText = "Please enter your email";
-                flag=false;
-            }else {
-                email_error_msg.innerText = "";
-            }
+        var email_error_msg = document.getElementById("email_error_msg");
+        var password_error_msg = document.getElementById("password_error_msg");
 
-            //password validation
-            if(password.length === 0)
-            {
-                password_error_msg.innerText = "Please enter your password";
-                flag=false;
-            }else {
-                password_error_msg.innerText = "";
+        var flag = true;
 
-                if(password.length < 5  )
-                {
-                    pstr.innerText = "Password should atleast 5 character long";
-                    flag = false;
-                }
-                if(password.length > 8)
-                {
-                    pstr.innerText = "Password length should not be greater than 8";
-                    flag = false;
-                }
-            }
-
-            return flag; // if flase then form will not submit
+        // Email validation
+        if (email.length === 0) {
+            email_error_msg.innerText = "Please enter your email";
+            flag = false;
+        } else {
+            email_error_msg.innerText = "";
         }
+
+        // Password validation
+        if (password.length === 0) {
+            password_error_msg.innerText = "Please enter your password";
+            flag = false;
+        } else {
+            password_error_msg.innerText = "";
+
+            if (password.length < 5) {
+                password_error_msg.innerText = "Password should be at least 5 characters long";
+                flag = false;
+            }
+            if (password.length > 8) {
+                password_error_msg.innerText = "Password length should not be greater than 8";
+                flag = false;
+            }
+        }
+
+        if (!flag) {
+            return; // Stop execution if validation fails
+        }
+
+        login_credintials_check(email, password);
+    }
+
+    function login_credintials_check(email, password) {
+        var message = document.getElementById("messageBox");
+        var messageText = document.getElementById("message");
+
+        // AJAX request
+        var x = new XMLHttpRequest();
+        x.open("POST", "../controller/login_controller.php", true);
+        x.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+        x.onreadystatechange = function () {
+            if (x.readyState === 4 && x.status === 200) {
+                message.style.display = "block";
+                messageText.innerHTML = x.responseText;
+            }
+        };
+
+        x.send("user_email=" + encodeURIComponent(email) + "&user_password=" + encodeURIComponent(password));
+    }
+</script>
+
+        
+
     </script>
 
      <!-- Swiper CDN JS Link -->
