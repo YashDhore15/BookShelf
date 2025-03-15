@@ -68,7 +68,7 @@
                     <a href="#"> <i class="fas fa-phone"></i> +111-446-987 </a>
                     <a href="#"> <i class="fas fa-envelope"></i> BookShelf@gmail.com </a>
 
-                    <img src="images/map_footer.jpg"  class="map" alt=""> <!-- map image -->
+                    <img src="/Bookshelf/images/map_footer.jpg"  class="map" alt=""> <!-- map image -->
                 
                 </div>
 
@@ -95,7 +95,7 @@
 
         <!--Custom js File Link -->
 
-        <script src="js/home.js"></script>
-        <script src="js/login.js"></script>
+        <script src="/Bookshelf/js/home.js"></script>
+        <script src="/Bookshelf/js/login.js"></script>
 
 </body>

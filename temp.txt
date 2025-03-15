@@ -1,0 +1,54 @@
+book_id
+book_cover
+ISBN_13	9780099549482
+book_title	To Kill A Mockingbird
+Author_name	Harper Lee
+Binding_Type	Paperback
+Publisher	Cornerstone
+Year_published	2010-06-24
+Number_of_pages	320
+stock
+about_author
+
+CREATE TABLE books (
+    book_id SERIAL PRIMARY KEY,      -- Auto-incremented unique ID
+    title VARCHAR(255) NOT NULL,     -- Book title
+    author VARCHAR(255) NOT NULL,    -- Author name
+    isbn_13 VARCHAR(13) UNIQUE,      -- 13-digit ISBN
+    binding VARCHAR(50),             -- `Paperback`, `Hardcover`, etc.
+    publisher VARCHAR(255),          -- Publisher name
+    published_date DATE,             -- Date of publication
+    pages INT CHECK (pages > 0),     -- Number of pages (must be positive)
+    stock INT DEFAULT 0,             -- Available stock count
+    price DECIMAL(10,2) NOT NULL,    -- Price of the book
+    book_cover VARCHAR(255),         -- Path to book cover image
+    description TEXT,                -- Description about the book
+    about_author TEXT,               -- Information about the author
+    category VARCHAR(100),           -- Genre (e.g., Fiction, Mystery, etc.)
+    language VARCHAR(50),            -- Language of the book
+    rating DECIMAL(3,2) DEFAULT 0.0, -- User rating (out of 5)
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP  -- Date added
+);
+
+
+INSERT INTO books 
+(title, author, isbn_13, binding, publisher, published_date, pages, stock, price, book_cover, description, about_author, category, language, rating, created_at) 
+VALUES 
+(
+    'Meditations',
+    'Marcus Aurelius',
+    '9780812968255',
+    'Paperback',
+    'Modern Library, Revised ed. edition (6 May 2003)',
+    '2002-05-14',
+    304,
+    16,  -- Stock count
+    320.00,  -- Price in INR
+    'https://m.media-amazon.com/images/I/71CkY2uvS+L._SY342_.jpg',  -- Image file (ensure it's stored correctly)
+    'Few ancient works have been as influential as the Meditations of Marcus Aurelius, philosopher and emperor of Rome (A.D. 161–180). A series of spiritual exercises filled with wisdom, practical guidance, and profound understanding of human behavior, it remains one of the greatest works of spiritual and ethical reflection ever written. Marcus''s insights and advice—on everything from living in the world to coping with adversity and interacting with others—have made the Meditations required reading for statesmen and philosophers alike, while generations of ordinary readers have responded to the straightforward intimacy of his style. For anyone who struggles to reconcile the demands of leadership with a concern for personal integrity and spiritual well-being, the Meditations remains as relevant now as it was two thousand years ago.',
+    'Marcus Aurelius Antoninus was born to an upper-class Roman family in A.D. 121 and was later adopted by the future emperor Antoninus Pius, whom he succeeded in 161. His reign was marked by a successful campaign against Parthia, but was overshadowed in later years by plague, an abortive revolt in the eastern provinces, and the deaths of friends and family, including his co-emperor Lucius Verus. A student of philosophy from his earliest youth, he was especially influenced by the first-century Stoic thinker Epictetus. His later reputation rests on his Meditations, written during his later years and never meant for formal publication. He died in 180, while campaigning against the barbarian tribes on Rome’s northern frontier.',
+    'Personal Finance',
+    'English',
+    4.5,  -- Average rating out of 5
+    NOW()
+);

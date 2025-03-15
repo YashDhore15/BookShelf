@@ -53,15 +53,10 @@
 
             <input type="submit" value="submit" class="btn" onclick=" sign_in_validation(event)">
 
-            <p id="loginError" style="color:red"> </p>
-
+            <p>forget password ? <a href="#"> Click here</a></p>
             <p>don't have an account ? <a href="signup.php">create one</a></p>
+            <p id="loginErrorMsg" style="color:red"> </p>
         </form>
-
-        
-        <div id="messageBox" style="display: none; padding: 10px; margin-top: 10px;">
-
-        <p id="message"> </p>
 
         </div>
 
@@ -116,7 +111,7 @@
     {
         let message = document.getElementById("messageBox");
         let messageText = document.getElementById("message");
-        let loginError = document.getElementById("loginError");
+        let loginErrorMsg = document.getElementById("loginErrorMsg");
 
         // AJAX request
         let x = new XMLHttpRequest();
@@ -136,8 +131,8 @@
                 } 
                 else 
                 {
-                    loginError.innerHTML = response.message;
-                    console.log(loginError.innerHTML);
+                    loginErrorMsg.innerHTML = response.message;
+                    console.log(loginErrorMsg.innerHTML);
                 }
             }
         }

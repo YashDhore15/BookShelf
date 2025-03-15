@@ -24,10 +24,10 @@
     <header class="header">
 
         <div class="header-1">
-            <a href="#" class="logo"><i class="fas fa-book">BookShelf</i></a>
+            <a href="/Bookshelf/" class="logo"><i class="fas fa-book">BookShelf</i></a>
 
-            <form action="" class="search-form">
-                <input type="search" name="" placeholder="Search here..." id="search-box">
+            <form method="GET" action="/Bookshelf/views/search.php" class="search-form" onsubmit="fetchBook(event)">
+                <input type="search" name="query" placeholder="Search here..." id="search-box">
 
                 <label for="search-box" class="fas fa-search"></label>
             </form>
@@ -77,4 +77,8 @@ on mobile phone nav-bar will be at bottom -->
     <script src="/Bookshelf/js/home.js"></script>
     <script src="/Bookshelf/js/login.js"></script>
 
+    <script src="/Bookshelf/js/search.js"></script>
+
 </body>
+
+</html>
