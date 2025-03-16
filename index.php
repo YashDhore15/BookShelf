@@ -19,9 +19,8 @@
 </head>
 
 <body>
-
-    <?= session_start(); ?>
-    <?= include "partials/header.php"; ?>
+    <?= session_start(); ?> 
+    <?= include "partials/header.php"; ?> 
 
     <!-- Header Section Starts -->
 
