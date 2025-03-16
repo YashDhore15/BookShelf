@@ -19,6 +19,7 @@
 
 <body>
 
+    <?= session_start() ?>
     <?= include "../partials/header.php" ?>
 
     <!-- Footer Section Starts -->

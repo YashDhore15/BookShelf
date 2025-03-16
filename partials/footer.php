@@ -95,7 +95,4 @@
 
         <!--Custom js File Link -->
 
-        <script src="/Bookshelf/js/home.js"></script>
-        <script src="/Bookshelf/js/login.js"></script>
-
 </body>
