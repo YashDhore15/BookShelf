@@ -9,12 +9,34 @@
 
 <body>
 
-    <?= include "../partials/header.php" ?>
+    <?php
+        session_start();
+        include "../includes/db.php";
+        include "../controller/search_controller.php";
+        $query = trim($_GET['query']);
+        $_SESSION['query'] = $query;
+        $html = fetchBooks($con);
+        include "../partials/header.php";
+     ?>
 
   <div class="content">
 
     <div class="book-grid">
-        <div class="book-card">
+        
+        <?= $html ?>
+
+    </div>
+
+  </div>
+
+  <?= include "../partials/footer.php" ?>
+
+</body>
+</html>
+
+<?php
+/*
+<div class="book-card">
             <img src="../images/book1.webp" alt="Book Cover">
             <h3>The Alchemist</h3>
             <p>Paulo Coelho</p>
@@ -85,12 +107,4 @@
             <p class="price">₹399</p>
             <button>Add to Cart</button>
         </div>
-
-    </div>
-
-  </div>
-
-  <?= include "../partials/footer.php" ?>
-
-</body>
-</html>
+*/

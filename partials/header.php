@@ -2,19 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete Responsive Online Boot Store Website Design Tutorial</title>
-
-    <!-- Swiper JS USE SWIPER form CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <!-- Font awesome cdn link-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <!-- Custom CSS File Link -->
-    <link rel="stylesheet" href="/Bookshelf/css/home.css">
+    
 </head>
 
 <body>
@@ -26,14 +14,15 @@
         <div class="header-1">
             <a href="/Bookshelf/" class="logo"><i class="fas fa-book">BookShelf</i></a>
 
-            <form method="GET" action="/Bookshelf/views/search.php" class="search-form" onsubmit="fetchBook(event)">
-                <input type="search" name="query" placeholder="Search here..." id="search-box">
+            <form method="GET" action="/Bookshelf/views/search.php" class="search-form" >
+                <input type="search" name="query" value="<?= $_SESSION['query'] ?>" placeholder="Search here..." id="search-box">
 
                 <label for="search-box" class="fas fa-search"></label>
             </form>
 
             <div class="icons">
                 <div id="search-btn" class="fas fa-search"></div>
+                <a href="https://www.flaticon.com/free-icons/log-out" title="log out icons"></a>
                 <a href="#" class="fas fa-heart"></a>
                 <a href="/Bookshelf/views/cart.php" class="fas fa-shopping-cart"></a>
                 <div id="login-btn" class="fas fa-user"></div>

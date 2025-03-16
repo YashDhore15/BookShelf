@@ -15,6 +15,7 @@
 
     <!-- Custom CSS File Link -->
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/search.css">
 </head>
 
 <body>
@@ -35,19 +36,15 @@
     <!-- if The Web-site is viewed in small tabs or
 on mobile phone nav-bar will be at bottom -->
 
-    <nav class="bottom-navbar">
-        <a href="#home" class="fas fa-home"></a>
-        <a href="#featured" class="fas fa-list"></a>
-        <a href="#arrivals" class="fas fa-tags"></a>
-        <a href="#reviews" class="fas fa-comments"></a>
-        <a href="#blogs" class="fas fa-newspaper"></a> <!-- change in logo looks better than original -->
-    </nav>
+    
 
     <!-- login form -->
 
     
 
     <!-- Home Section Starts -->
+
+<div id="search-result">
 
     <section class="home" id="home">
 
@@ -891,7 +888,7 @@ on mobile phone nav-bar will be at bottom -->
     </section>
     <!-- Blogs Section Ends -->
 
-
+</div>
     <!-- Footer Section Starts -->
         <?= include "partials/footer.php" ?>
     <!-- Footer Section Ends -->
@@ -910,6 +907,7 @@ on mobile phone nav-bar will be at bottom -->
 
     <script src="js/home.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/search.js"></script>
 
 </body>
 
