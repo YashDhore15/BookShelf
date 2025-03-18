@@ -1,8 +1,6 @@
 function fetchBook(event) {
     event.preventDefault(); // Prevents default form submission
 
-    console.log("I'm in search books");
-
     let query = document.getElementById("search-box").value.trim();
 
     if (query === "") {

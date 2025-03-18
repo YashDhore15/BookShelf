@@ -2,12 +2,18 @@
 <html lang="en">
 
 <head>
-    
+    <link rel="stylesheet" href="../css/logout.css">
 </head>
 
 <body>
 
     <!-- Header Section Starts -->
+
+    <?php
+        $search_query = "";
+        if(isset($_SESSION['query']))
+            $search_query = trim($_SESSION['query']);
+    ?>
 
     <header class="header">
 
@@ -15,14 +21,15 @@
             <a href="/Bookshelf/" class="logo"><i class="fas fa-book">BookShelf</i></a>
 
             <form method="GET" action="/Bookshelf/views/search.php" class="search-form" >
-                <input type="search" name="query" value="<?= $_SESSION['query'] ?>" placeholder="Search here..." id="search-box">
+                <input type="search" name="query" value="<?=$search_query?>" placeholder="Search here..." id="search-box">
 
                 <label for="search-box" class="fas fa-search"></label>
             </form>
 
             <div class="icons">
                 <div id="search-btn" class="fas fa-search"></div>
-                <a href="https://www.flaticon.com/free-icons/log-out" title="log out icons"></a>
+
+                <a href="" class="fas fa-sign-out-alt" onclick="logout()"></a>              
                 <a href="#" class="fas fa-heart"></a>
                 <a href="/Bookshelf/views/cart.php" class="fas fa-shopping-cart"></a>
                 <div id="login-btn" class="fas fa-user"></div>
@@ -67,6 +74,8 @@ on mobile phone nav-bar will be at bottom -->
     <script src="/Bookshelf/js/login.js"></script>
 
     <script src="/Bookshelf/js/search.js"></script>
+    <script src="js/logout.js"></script>  <!-- Include JS -->
+
 
 </body>
 

@@ -25,6 +25,20 @@
     <!-- Footer Section Starts -->
     <?= include "../partials/footer.php" ?>
     <!-- Footer Section Ends -->
+
+    <p id="p" onclick="change()">
+        Hello
+    </p>
+
+    <script>
+
+        function change()
+        {
+            let p = document.getElementById("p");
+            p.innertext = "I was right";
+        }
+
+    </script>
 </body>
 
 </html>

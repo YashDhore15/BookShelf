@@ -13,6 +13,8 @@
     <!-- Font awesome cdn link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+    
+
     <!-- Custom CSS File Link -->
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/search.css">

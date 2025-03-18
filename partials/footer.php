@@ -81,7 +81,7 @@
                 <a href="#" class="fab fa-pinterest"></a>
             </div>
 
-            <div class="credit"> created by <span>mr abc designs </span> | all rights reserved!</div>
+            <div class="credit"> created by <span> Yash Dhore, Rutik Wagh, Vaibhav Tambade </span> | all rights reserved!</div>
 
         </section>
 

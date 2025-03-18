@@ -15,6 +15,7 @@
             $stmt = $con->prepare("SELECT book_cover, title, author, price FROM books 
             WHERE title ILIKE :query 
             OR author ILIKE :query 
+            OR category ILIKE :query
             OR isbn_13 ILIKE :query");
 
             $stmt->execute(["query"=>"%$query%"]);
