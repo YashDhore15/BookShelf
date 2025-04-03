@@ -31,6 +31,24 @@
 
   <?= include "../partials/footer.php" ?>
 
+  <script>
+    function addToCart(id) {
+    
+        fetch("function.php", {
+        method: "POST",
+        body: new URLSearchParams({ action: "add_to_cart", book_id: id}),
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert(data.message); // Show success message
+    })
+    .catch(error => {
+        console.error("Error:", error);
+    });
+
+}
+  </script>
+
 </body>
 </html>
 

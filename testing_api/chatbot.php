@@ -2,7 +2,7 @@
 
 header("Content-Type: application/json");
 
-$apiKey = "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";
+$apiKey = "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";
 $endpoint = "https://openrouter.ai/api/v1/chat/completions";
 
 $data = json_decode(file_get_contents("php://input"), true);
@@ -25,7 +25,7 @@ $requestData = [
 $ch = curl_init($endpoint);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, [
-    "Authorization: Bearer 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",
+    "Authorization: Bearer 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",
     "Content-Type: application/json",
     "HTTP-Referer: YOUR_WEBSITE_URL",
     "X-Title: Bookshelf AI"

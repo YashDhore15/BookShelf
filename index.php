@@ -67,8 +67,7 @@ on mobile phone nav-bar will be at bottom -->
                     ?>
                             
                 </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis blanditiis sint facilis, iusto nemo
-                    soluta facere rerum error incidunt voluptatem.</p>
+                <p style="font-size: 25px; font-weight: 10px">Find your next favourite book!</p>
 
                 <a href="#" class="btn">shop Now</a>
             </div>

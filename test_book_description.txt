@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details - Rich Dad Poor Dad</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            width: 90%; /* Adjusted width for better centering */
+            max-width: 1200px; /* Maximum width for larger screens */
+            margin: 0 auto; /* Centered */
+            background: white;
+            padding: 40px;
+            box-sizing: border-box;
+            flex-grow: 1;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Top Section: Image and Details */
+        .top-section {
+            display: flex;
+            gap: 40px; /* Gap between image and details */
+            margin-bottom: 40px; /* Gap between top and bottom sections */
+        }
+
+        /* Left Container: Book Image */
+        .book-image-container {
+            flex: 1;
+            text-align: center; /* Center-align the image */
+        }
+
+        .book-image-container img {
+            width: 100%; /* Responsive image */
+            max-width: 400px; /* Maximum image size */
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Right Container: Book Details */
+        .book-details-container {
+            flex: 2;
+            text-align: left; /* Align text to the left */
+        }
+
+        .book-details-container h1 {
+            margin: 0;
+            font-family: 'Merriweather', serif; /* Stylish heading font */
+            font-size: 3.5em; /* Adjusted font size */
+            color: #2c3e50;
+            line-height: 1.2;
+        }
+
+        .book-details-container p {
+            color: #555;
+            font-size: 1.8em; /* Adjusted font size */
+            margin: 15px 0; /* Increased spacing */
+        }
+
+        .rating {
+            font-size: 1.8em; /* Adjusted font size */
+            color: #f39c12; /* Yellow color for filled stars */
+            margin-top: 10px;
+        }
+
+        .rating .star-filled {
+            color: #f39c12; /* Yellow color for filled stars */
+        }
+
+        .rating .star-empty {
+            color: #ddd; /* Light gray for empty stars */
+        }
+
+        .price {
+            font-size: 2.5em; /* Adjusted font size */
+            color: #e44d26;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .quantity {
+            margin: 20px 0;
+        }
+
+        .quantity label {
+            font-size: 1.5em; /* Adjusted font size */
+            color: #555;
+        }
+
+        .quantity select {
+            font-size: 1.5em;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .add-to-cart-btn, .add-to-wishlist-btn {
+            display: inline-block;
+            background: #27ae60; /* Green color */
+            color: white;
+            padding: 10px 20px; /* Reduced padding for smaller button */
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.5em; /* Adjusted font size */
+            margin-top: 20px;
+            transition: background 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px; /* Space between buttons */
+        }
+
+        .add-to-wishlist-btn {
+            background: #3498db; /* Blue color for wishlist button */
+        }
+
+        .add-to-cart-btn:hover {
+            background: #219150; /* Darker green on hover */
+        }
+
+        .add-to-wishlist-btn:hover {
+            background: #2980b9; /* Darker blue on hover */
+        }
+
+        .category {
+            font-size: 1.5em;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* Bottom Container: Book Description and Author */
+        .book-info-container {
+            margin-top: 40px; /* Gap between top and bottom sections */
+            text-align: left;
+        }
+
+        .book-info-container h2 {
+            font-family: 'Merriweather', serif; /* Stylish heading font */
+            font-size: 2.5em; /* Adjusted font size */
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .book-info-container p {
+            font-size: 1.5em; /* Adjusted font size */
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* Separator */
+        .separator {
+            width: 100%;
+            height: 1px;
+            background: #ddd;
+            margin: 40px 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <?php include '../partials/header.php'; ?>
+    <div class="container">
+        <!-- Top Section: Image and Details -->
+        <div class="top-section">
+            <!-- Left Container: Book Image -->
+            <div class="book-image-container">
+                <img src="https://prodimage.images-bn.com/pimages/9781612681122_p0_v1_s600x595.jpg" alt="Book Cover">
+            </div>
+
+            <!-- Right Container: Book Details -->
+            <div class="book-details-container">
+                <h1>Rich Dad Poor Dad</h1>
+                <p>by <strong>Robert T. Kiyosaki</strong></p>
+                <p class="rating">
+                    <span class="star-filled">★★★★</span><span class="star-empty">☆</span> (4.5/5)
+                </p>
+                <p>ISBN: 123-4567890123</p>
+                <p class="price">$19.99</p>
+                <p class="category">Category: <strong>Finance</strong></p>
+                <!-- Quantity Dropdown -->
+                <div class="quantity">
+                    <label for="quantity">Quantity:</label>
+                    <select id="quantity" name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <!-- Add to Cart and Add to Wishlist Buttons -->
+                <button class="add-to-cart-btn">Add to Cart</button>
+                <button class="add-to-wishlist-btn">Add to Wishlist</button>
+            </div>
+        </div>
+
+        <!-- Bottom Container: Book Description and Author -->
+        <div class="book-info-container">
+            <h2>Book Description</h2>
+            <p>April of 2022 marks a 25-year milestone for the personal finance classic Rich Dad Poor Dad that still ranks as the #1 Personal Finance book of all time. And although 25 years have passed since Rich Dad Poor Dad was first published, readers will find that very little in the book itself has changed — and for good reason. While so much in our world is changing a high speed, the lessons about money and the principles of Rich Dad Poor Dad haven’t changed. Today, as money continues to play a key role in our daily lives, the messages in Robert Kiyosaki’s international bestseller are more timely and more important than ever.</p>
+
+            <!-- Separator -->
+            <div class="separator"></div>
+
+            <h2>About the Author</h2>
+            <p>Robert T. Kiyosaki is an entrepreneur, educator, and investor who believes that each of us has the power to take control of our financial future. He is best known as the author of "Rich Dad Poor Dad"—the #1 personal finance book of all time. Through his books and teachings, he has helped millions of people understand the importance of financial literacy and smart investing.</p>
+
+            <!-- Separator -->
+            <div class="separator"></div>
+
+            <h2>Product Details</h2>
+            <p><strong>ISBN-13:</strong> 9781612681122</p>
+            <p><strong>Author:</strong> Robert t . Kiyosaki</p>
+            <p><strong>Publisher:</strong> <span style="color: green;">Plata Publishing, LLC.</span></p>
+            <p><strong>Publication date:</strong> 04/05/2022</p>
+            <p><strong>Binding:</strong> PaperBack</p>
+            <p><strong>Pages:</strong> 336</p>
+        </div>
+    </div>
+    <?php include '../partials/footer.php'; ?>
+</body>
+</html>

@@ -12,7 +12,7 @@
 
         else
         {
-            $stmt = $con->prepare("SELECT book_cover, title, author, price FROM books 
+            $stmt = $con->prepare("SELECT book_id, book_cover, title, author, price FROM books 
             WHERE title ILIKE :query 
             OR author ILIKE :query 
             OR category ILIKE :query
@@ -29,11 +29,13 @@
                 foreach($books as $book)
                 {
                     $html = $html.'<div class="book-card">
+                    <a href="/BookShelf/views/product.php?book_id=' . $book['book_id'] . '">
                     <img src="' . $book['book_cover'] . '" alt="Book Cover">
                     <h3>' . $book['title'] . '</h3>
                     <p>' . $book['author'] . '</p>
                     <p class="price"> ₹' . $book['price'] . ' </p>
-                    <button>Add to Cart</button>
+                    </a>
+                    <button onclick="addToCart('. $book['book_id'] .')">Add to Cart</button>
                 </div>';
 
                 }

@@ -1,0 +1,1019 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --green:#27ae60;
+    --dark-color:#219150;
+    --black:#444;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition:width none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--black);
+}
+
+/* Section relate to home page sliding books */
+
+section{
+    padding: 5rem 9%;
+}
+
+ /* CSS For Featured Books Section */
+
+ .heading{
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+
+ }
+
+ .heading::before{
+    content: '';
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: .01rem;
+    background: rgba(0,0,0,.1);
+    z-index: -1;
+ }
+
+ .heading span{
+    font-size: 3rem;
+    padding: .5rem 2rem;
+    color: var(--black);
+    background: #fff;
+    border: var(--border);
+ }
+
+/* Login Form Button Styling */
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    color: #fff;
+    background: var(--green);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background: var(--dark-color);
+}
+
+.header .header-1{
+    background: #fff;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Web Site Logo CSS */
+.header .header-1 .logo{
+
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+    letter-spacing: 2px; /* change */
+}
+
+/* To Change Colour of Logo */
+.header .header-1 .logo i{
+    color: var(--green);
+
+}
+
+/* Search Bar */
+.header .header-1 .search-form{
+    width: 50rem;
+    height: 5rem;
+    border: var(--border);
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+/* Search Bar Input Tag */
+.header .header-1 .search-form input{
+
+    font-size: 1.6rem;
+    padding: 0 1.2rem;
+    height: 100%;
+    width: 100%;
+    text-transform: none;
+    color: var(--black);
+}
+
+/* Search Bar Label Tag */
+.header .header-1 .search-form label{
+    font-size: 2.5rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .header-1 .search-form label:hover{
+    color: var(--green);
+}
+
+/* Icons Of Nav Bar */
+.header .header-1 .icons div,
+    .header .header-1 .icons a{
+
+        font-size: 2.5rem;
+        margin-left: 1.5rem;
+        color: var(--black);
+        cursor: pointer;
+}
+
+/* Icons Hover */
+.header .header-1 .icons div:hover,
+    .header .header-1 .icons a:hover{
+
+      color: var(--green);
+}
+
+#search-btn{
+    display: none;
+}
+/* Nav Bar BackGround Colour */
+.header .header-2{
+    background: var(--green);
+}
+
+/* Nav-Bar Related CSS */
+.header .header-2 .navbar{
+    text-align: center;
+}
+
+.header .header-2 .navbar a{
+    color: #fff;
+    display: inline-block;
+    padding: 1.2rem;
+    font-size: 1.7rem;
+}
+
+.header .header-2 .navbar a:hover{
+    background: var(--dark-color);
+}
+
+/* To Keep Position of Nav bar Fixed */
+
+.header .header-2 .active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+
+/* Small Width View Nav-Bar  */
+/* if The Web-site is viewed in small tabs or
+on mobile phone nav-bar will be at bottom */
+
+.bottom-navbar{
+
+    text-align: center;
+    background: var(--green);
+    position: fixed;
+    bottom: 0; left: 0;
+    right: 0;
+    z-index: 1000;
+    display: none;
+}
+
+.bottom-navbar a{
+    font-size: 2.5rem;
+    padding: 2rem;
+    color: #fff;
+}
+
+.bottom-navbar a:hover{
+
+    background: var(--dark-color);
+}
+
+
+/* Login Form CSS Styling */
+
+.login-form-container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,.9); /* To make web-page background slightly visible  */
+    position: fixed;
+    top: 0; right: -105%;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+}
+
+/* JS relate Property With CSS */
+
+.login-form-container.active{
+    right: 0;
+}
+
+
+/*  form Tag of Login Form */
+/*  adding border */
+.login-form-container form{
+
+    background: #fff;
+    border: var(--border);
+    width: 40rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin: 2rem;
+}
+
+ /* CSS For H3 Tag */
+
+.login-form-container form h3{
+    
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+    text-align: center;
+}
+
+.login-form-container form span{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+/* CSS For Both Text Field */
+.login-form-container form .box{
+
+    width: 100%;
+    margin: .7rem 0;
+    font-size: 1.6rem;
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.login-form-container form .checkbox{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0;
+}
+
+.login-form-container form .checkbox label{
+
+    font-size: 1.5rem;
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+/*Login Form Button CSS */
+
+.login-form-container form .btn{
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+/* Login Form Two HyperLinks to create acc and register */
+.login-form-container form p{
+    padding-top: .8rem;
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+.login-form-container form p a{
+    color: var(--green);
+    text-decoration: underline;
+}
+
+ /* CSS for login form cross i.e. close button */
+
+.login-form-container #close-login-btn{
+    position: absolute;
+    top: 1.5rem; right: 2.5rem;
+    font-size: 5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+/* CSS For Sliding Book Section */
+
+.home{
+    background: url('../images/background-banner.png') no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+.home .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+
+.home .row .content{
+    flex: 1 1 42rem;
+}
+
+.home .row .books-slider{
+    flex: 1 1 42rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.home .row .books-slider a img{
+    height: 25rem;
+}
+
+.home .row .books-slider a:hover img{
+    transform: scale(.9);
+}
+ /* CSS FOR STAND IN SLIDING BOOKS VIEW */
+/* .stand{
+    height:250px;
+    width:650px;
+} */
+
+/* Change to original as shelf image was found */
+.home .row .books-slider .stand{
+    width: 100%;
+    margin-top: -2rem; /* Befor was -12rem */
+}
+
+.home .row .content h3{
+    color: var(--black);
+    font-size: 4.5rem;
+}
+
+.home .row .content p{
+    color: var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+ /* Change In Code     Commented this code giving problem overlaping into the navbar when page size is small  */
+
+/* body{
+    height: 900px;
+}  */
+
+ /* CSS For ICONS Like [10 Days Return,free shipping..] */
+.icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 1.5rem;
+}
+
+.icons-container .icons{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.icons-container .icons i{
+   font-size: 3.5rem;
+   color: var(--green); 
+}
+
+.icons-container .icons h3{
+    font-size: 2.2rem;
+    color: var(--black); 
+    padding-bottom: .5rem;
+ }
+
+ .icons-container .icons p{
+    font-size: 1.4rem;
+    color: var(--light-color); 
+ }
+
+ /* CSS For Featured Books Section */
+
+ .featured .featured-slider .box{
+
+    margin: 2rem 0;
+    position: relative;
+    overflow: hidden;
+    border: var(--border);
+    text-align: center;
+ }
+
+ .featured .featured-slider .box:hover{
+    border: var(--border-hover);
+ }
+
+ /* For Background of book image box */
+ .featured .featured-slider .box .image{
+    padding: 1rem;
+    background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
+
+ }
+
+ .featured .featured-slider .box:hover .image{
+
+    transform: translateY(6rem); /* Countering Image overflow */
+ }
+
+ /* For Book image size  */
+ .featured .featured-slider .box .image img{
+    
+    height: 22rem; /* Changed than original */
+ }
+
+ .featured .featured-slider .box .icons{
+
+   border-bottom: var(--border-hover);
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    z-index: 1;
+    transform: translateY(-105%); /* hover of icons  come down on hover*/
+
+ }
+
+ .featured .featured-slider .box:hover .icons{
+
+    transform: translateY(0%); /* hover of icons  come down on hover*/
+ }
+
+ .featured .featured-slider .box .icons a{
+    color: var(--black);
+    font-size: 2.2rem;
+    padding: 1.3rem 1.5rem;
+
+ }
+
+ .featured .featured-slider .box .icons a:hover{
+
+    background: var(--green);
+    color: #fff;
+ }
+
+ .featured .featured-slider .box .content{
+
+    background: #eee;
+    padding: 1.5rem;
+
+ }
+
+ .featured .featured-slider .box .content h3{
+
+    font-size: 2rem;
+    color: var(--black);
+ }
+
+ .featured .featured-slider .box .content .price{
+
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-top: 1rem;
+ }
+
+ .featured .featured-slider .box .content .price span{
+
+    font-size: 1.5rem;
+    color: var(--light-color);
+    text-decoration: line-through;
+ }
+
+/* CSS Related to imported Divs */
+
+/* For next and previous arrows */
+.swiper-button-next,
+.swiper-button-prev{
+
+    border: var(--border-hover);
+    height: 4rem;
+    width: 4rem;
+    color: var(--black);
+    background: #fff;
+
+}
+
+/* For next and previous arrows */
+.swiper-button-next::after,
+.swiper-button-prev:after{
+
+    font-size: 2rem;
+}
+/* For next and previous arrows */
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+
+    background: var(--black);
+    color: #fff;
+}   
+
+/* CSS for newsletter Section and subscribe form */
+
+.newsletter{
+
+    background: url('http://localhost/bookshelf/images/girl_reading_book.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.newsletter form{
+
+    max-width: 45rem;
+    margin-left: auto;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.newsletter form h3{
+
+    font-size: 2.2rem;
+    color: #fff;
+    padding-bottom: .7rem;
+    font-weight: normal;
+}
+
+.newsletter form .box{
+
+    width: 100%;
+    margin: .7rem 0;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    border-radius: .5rem;
+    text-rendering: none;
+}
+
+/* CSS for Arrivals Section */
+
+.arrivals .arrivals-slider .box{
+
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    border: var(--border);
+    margin: 1rem 0;
+}
+
+.arrivals .arrivals-slider .box:hover{
+
+    border: var(--border-hover);
+}
+
+.arrivals .arrivals-slider .box .image img{
+
+    height: 15rem;
+
+}
+
+.arrivals .arrivals-slider .box .content h3{
+
+    font-size: 2rem;
+    color: var(--black);
+
+}
+
+.arrivals .arrivals-slider .box .content .price{
+
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.arrivals .arrivals-slider .box .content .price span{
+
+    font-size: 1.5rem;
+    color: var(--light-color);
+    text-decoration: line-through;
+}
+
+.arrivals .arrivals-slider .box .content .stars i{
+
+    font-size: 1.5rem;
+    color: var(--green);
+
+}
+
+/* Change in code for bottom overflow into navbar */
+.arrivals-slider-adjust{
+
+    margin-bottom: 50px;
+}
+/*------------------------------------------------*/
+
+/* CSS for Deal Of The Day Section */
+
+.deal{
+
+    background: #f3f3f3;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.deal .content{
+
+    flex: 1 1 42rem;
+}
+
+.deal .image{
+    
+    flex: 1 1 42rem;
+}
+
+.deal .image img{
+    
+    width: 100%;
+}
+
+.deal .content h3{
+
+    color: var(--green);
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+}
+
+.deal .content h1{
+
+    color: var(--black);
+    font-size: 4rem;
+}
+
+.deal .content p{
+    padding: 1rem 0;
+    color: var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+/* CSS for Reviews Section */
+
+.reviews .reviews-slider .box{
+
+    border: var(--border);
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.reviews .reviews-slider .box:hover{
+
+    border: var(--border-hover);
+}
+
+.reviews .reviews-slider .box img{
+
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews .reviews-slider .box h3{
+
+    color: var(--black);
+    font-size: 2.2rem;
+    padding: 5rem 0;
+}
+
+.reviews .reviews-slider .box p{
+
+    color: var(--light-color);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.reviews .reviews-slider .box .stars{
+
+    font-size: 1.7rem;
+    color: var(--green);
+
+}
+
+
+/* CSS For Blogs Section */
+
+.blogs .blogs-slider .box{
+
+    margin: 2rem 0;
+    border: var(--border);
+
+}
+
+.blogs .blogs-slider .box:hover{
+
+    border: var(--border-hover);
+}
+
+.blogs .blogs-slider .box .image{
+
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.blogs .blogs-slider .box .image img{
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogs .blogs-slider .box:hover .image img{
+
+    transform: scale(1.1);
+}
+
+.blogs .blogs-slider .box .content{
+
+    padding: 1.5rem;
+}
+
+.blogs .blogs-slider .box .content h3{
+
+    font-size: 2.2rem;
+    color: var(--black);
+}
+
+.blogs .blogs-slider .box .content p{
+
+    font-size: 1.4rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+/* CSS For Footer Section */
+
+.footer .box-container{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+
+    font-size: 2.2rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.map{
+
+    width: 30rem;
+}
+
+.footer .box-container .box a{
+
+    display: block;
+    font-size: 1.4rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+
+    color: var(--green);
+    padding-right: .5rem;
+
+}
+
+.footer .box-container .box a:hover i{
+
+    padding-right: 2rem;
+}
+
+.footer .share{
+
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer .share a{
+
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--green);
+    margin: 0 .3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover{
+
+    background: var(--black);
+}
+
+.footer .credit{
+
+    border-top: var(--border);
+    margin-top: 2rem;
+    padding: 0 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: var(--light-color);
+    text-align: center;
+}
+
+.footer .credit span{
+
+    color: var(--green);
+}
+
+/* CSS for Web-site loader  */
+
+.loader-container{
+
+    position: fixed;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .active  class is added using js */
+.loader-container.active{
+
+    display: none;
+}
+
+.loader-container img{
+
+    height: 25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+/* Adjust font size to 55% for screens 991px or smaller to ensure text scales well on smaller devices. */
+
+@media (max-width: 991px) {
+
+    /* Set font size to 55% for better scaling on smaller screens */
+    html {
+        font-size: 55%;
+    }
+
+    /* Adjust padding for the header-1 section */
+    .header .header-1 {
+        padding: 2rem;
+    }
+
+    setion{
+        padding: 3rem 2rem;
+    }
+}
+
+/* Media query for screens 768px or smaller */
+@media (max-width: 768px) {
+
+    /* Remove scroll padding at the top */
+    html {
+        scroll-padding-top: 0;
+    }
+
+    /* Increase bottom padding of the body to accommodate UI elements */
+    body {
+        padding-bottom: 6rem;
+    }
+
+    /* Hide header-2 for better layout on smaller screens */
+    .header .header-2 {
+        display: none;
+    }
+
+    /* Display the bottom navigation bar */
+    .bottom-navbar {
+        display: block;
+    }
+
+    /* Make the search button visible */
+    #search-btn {
+        display: inline-block;
+    }
+
+    /* Apply shadow effect and position changes to header-1 */
+    .header .header-1 {
+        box-shadow: var(--box-shadow);
+        position: relative;
+    }
+
+    /* Position search form within header-1 and apply styling */
+    .header .header-1 .search-form {
+        position: absolute;
+        top: -115%; 
+        right: 2rem;
+        width: 90%;
+        box-shadow: var(--box-shadow);
+    }
+
+    /* Active state for drop-down search bar */
+    .header .header-1 .search-form.active {
+        top: 115%;
+    }
+
+    /* for sliding books view */
+    
+    .home .row .content{
+        text-align: center;
+    }
+    
+    .home .row .content h3{
+        font-size: 3.5rem;
+    }
+
+    /* Adjustment for background inage of girl reading book */
+    .newsletter{
+
+        background-position: right;
+    }
+
+    /* Adjustment for background inage of girl reading book */
+    .newsletter form{
+
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+/* Media query for screens 450px or smaller */
+@media (max-width: 450px) {
+
+    /* Set font size to 50% for very small screens */
+    html {
+        font-size: 50%;
+    }
+}
+
+
+
+
+
+
